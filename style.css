@@ -100,10 +100,21 @@ p {
 /* Mobile and tablet responsive adjustments */
 @media (max-width: 768px) {
   .container {
-    padding: 30px 20px;
+    padding: 20px 15px; /* Significantly reduced padding */
+    max-width: 100%; /* Allow container to use more screen width */
   }
   .blank {
     height: 40vh; /* Shorter parallax sections on mobile */
+  }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 10px; /* Even smaller padding for phones */
+  }
+  .blank {
+    height: 30vh; /* Even shorter parallax sections on very small screens */
   }
 }
 
@@ -119,5 +130,13 @@ p {
   .blank {
     background-attachment: fixed !important;  /* Force fixed even with reduced motion */
     transition: none;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  /* iOS devices */
+  .blank {
+    background-attachment: scroll;
+    background-position: center center;
   }
 }
