@@ -147,23 +147,3 @@ p {
     /* Disable parallax on mobile touch devices where it performs poorly */
   }
 }
-
-/* For smaller screens, use smaller images */
-@media (max-width: 768px) {
-  .first-image {
-    background-image: url('images/image1-small.jpg');
-  }
-  /* Same for other images */
-  .second-image {
-    background-image: url('images/image2-small.jpg');
-  }
-  .third-image {
-    background-image: url('images/image3-small.jpg');
-  }
-  .fourth-image {
-    background-image: url('images/image4-small.jpg');
-  }
-  .fifth-image {
-    background-image: url('images/image5-small.jpg');
-  }
-}
